@@ -8,6 +8,7 @@ Platform digital berbasis web sebagai wadah jual-beli antar mahasiswa dan civita
 - Composer
 - Node.js & NPM
 - MySQL (XAMPP)
+NABILAH LOV HYUNWOOK
 
 ## Cara menjalankan dari nol
 1. `git clone https://github.com/nabilah-nugroho/veteranmart.git`
