@@ -32,3 +32,6 @@ Platform digital berbasis web sebagai wadah jual-beli antar mahasiswa dan civita
 | Muhammad Diyar | 2510514032 | Transaction Management (pemesanan produk, konfirmasi pesanan, riwayat transaksi)|
 | Ananda Darryl | 2510514028 | User Interaction (wishlist, rating, review, komunikasi pembeli & penjual)|
 | Raissa Ariya Antya | 2510514011 | Admin Management (pengelolaan pengguna, moderasi produk, pengawasan aktivitas)|
+
+
+raissa nabilah nazla jelli <3
