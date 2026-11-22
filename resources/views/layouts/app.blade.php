@@ -6,7 +6,7 @@
     <title>{{ $title ?? 'VeteranMart' }}</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="min-h-screen bg-slate-950 text-slate-100 antialiased">
+<body class="min-h-screen bg-[#eef8f2] text-[#123d29] antialiased">
     @yield('content')
 </body>
 </html>
