@@ -16,15 +16,17 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         User::factory()->create([
-            'name' => 'Ahmad Fauzan',
-            'email' => 'ahmad.fauzan@upnvj.ac.id',
+            'name' => 'Admin VeteranMart',
+            'email' => 'admin@upnvj.ac.id',
             'password' => 'password',
+            'role' => 'admin',
         ]);
 
         User::factory()->create([
-            'name' => 'Siti Rahma',
-            'email' => 'siti.rahma@upnvj.ac.id',
+            'name' => 'Mahasiswa Demo',
+            'email' => 'mahasiswa@upnvj.ac.id',
             'password' => 'password',
+            'role' => 'mahasiswa',
         ]);
     }
 }
