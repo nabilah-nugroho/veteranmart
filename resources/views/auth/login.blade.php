@@ -30,7 +30,7 @@
             </form>
             <div class="mt-6 rounded-xl border border-amber-400/20 bg-amber-400/5 p-4 text-sm text-slate-300">
                 <p class="font-semibold text-amber-300">Akun dummy untuk demo</p>
-                <p class="mt-1">ahmad.fauzan@upnvj.ac.id</p>
+                <p class="mt-1">mahasiswa@upnvj.ac.id</p>
                 <p>Password: <span class="font-mono">password</span></p>
             </div>
         </div>
