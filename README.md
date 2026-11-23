@@ -18,6 +18,26 @@ npm run build
 php artisan serve
 ```
 
+## pull req template
+~~~bash
+## Description
+Apa yang dikerjakan?
+
+## Related Issue
+Closes #1
+
+## Changes
+- [ ] Implementasi fitur
+- [ ] Testing
+- [ ] Dokumentasi
+
+## Checklist
+- [ ] Tidak ada error
+- [ ] Sudah dites
+- [ ] Siap direview
+
+~~~
+
 Buka http://127.0.0.1:8000/login.
 
 ## Akun dummy
