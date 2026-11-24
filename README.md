@@ -18,26 +18,44 @@ npm run build
 php artisan serve
 ```
 
+## pull req template
+~~~bash
+## Description
+Apa yang dikerjakan?
+
+## Related Issue
+Closes #1
+
+## Changes
+- [ ] Implementasi fitur
+- [ ] Testing
+- [ ] Dokumentasi
+
+## Checklist
+- [ ] Tidak ada error
+- [ ] Sudah dites
+- [ ] Siap direview
+
+~~~
+
 Buka http://127.0.0.1:8000/login.
 
 ## Akun dummy
 
 | Role | Email | Password |
 |---|---|---|
-<<<<<<< HEAD
-| Bersama | - | UX Research & Design|
-| Nabilah Nur Aisyah Nugroho | 2510514020 | Authentication & User Profile (registrasi, login, pengelolaan profil)|
-| Nazla Aliza Pasya | 2510514002 | Product Management (tambah, edit, hapus, pengelolaan informasi produk)|
-| Jelli Wanti Eriska Pardosi | 2510514010 | Product Discovery (katalog produk, pencarian, filter, sorting, detail produk)|
-| Muhammad Diyar | 2510514032 | Transaction Management (pemesanan produk, konfirmasi pesanan, riwayat transaksi)|
-| Ananda Darryl | 2510514028 | User Interaction (wishlist, rating, review, komunikasi pembeli & penjual)|
-| Raissa Ariya Antya | 2510514011 | Admin Management (pengelolaan pengguna, moderasi produk, pengawasan aktivitas)|
-
-
-raissa nabilah nazla jelli <3
-=======
 | Admin | `admin@upnvj.ac.id` | `password` |
 | Mahasiswa | `mahasiswa@upnvj.ac.id` | `password` |
+
+## Deploy
+
+Atur `APP_KEY`, `APP_URL`, `APP_ENV=production`, `APP_DEBUG=false`, dan kredensial database dari hosting. Pastikan document root mengarah ke folder `public`, lalu build asset dengan `npm ci` dan `npm run build`. Jalankan migrasi sekaligus seed akun demo saat release pertama:
+
+```bash
+php artisan migrate --force --seed
+```
+
+Seeder aman dijalankan ulang dan akan mengatur ulang password akun demo menjadi `password`. Jangan gunakan akun demo ini sebagai akun admin untuk lingkungan produksi berisi data nyata.
 
 ## File penting
 
@@ -54,4 +72,3 @@ php artisan migrate:fresh --seed
 ```
 
 > Jangan commit `.env`; gunakan `.env.example` sebagai template.
->>>>>>> b4f0ca7d999cb51d820686d29cf0e8a951f145ac

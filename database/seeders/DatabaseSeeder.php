@@ -15,18 +15,22 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        User::factory()->create([
-            'name' => 'Admin VeteranMart',
-            'email' => 'admin@upnvj.ac.id',
-            'password' => 'password',
-            'role' => 'admin',
-        ]);
+        User::updateOrCreate(
+            ['email' => 'admin@upnvj.ac.id'],
+            [
+                'name' => 'Admin VeteranMart',
+                'password' => 'password',
+                'role' => 'admin',
+            ],
+        );
 
-        User::factory()->create([
-            'name' => 'Mahasiswa Demo',
-            'email' => 'mahasiswa@upnvj.ac.id',
-            'password' => 'password',
-            'role' => 'mahasiswa',
-        ]);
+        User::updateOrCreate(
+            ['email' => 'mahasiswa@upnvj.ac.id'],
+            [
+                'name' => 'Mahasiswa Demo',
+                'password' => 'password',
+                'role' => 'mahasiswa',
+            ],
+        );
     }
 }
