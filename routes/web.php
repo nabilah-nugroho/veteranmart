@@ -9,3 +9,4 @@ Route::post('/login', [AuthController::class, 'store'])->name('login.store');
 Route::post('/logout', [AuthController::class, 'destroy'])->middleware('auth')->name('logout');
 
 Route::view('/dashboard', 'dashboard')->middleware('auth')->name('dashboard');
+Route::view('/produk', 'products.index')->name('products.index'); //untuk katalog
