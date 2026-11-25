@@ -22,7 +22,7 @@ class ProductRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'name'        => ['required', 'string', 'max:255'],
+            'title'       => ['required', 'string', 'max:255'],
             'description' => ['nullable', 'string'],
             'price'       => ['required', 'numeric', 'gt:0'],
             'stock'       => ['required', 'integer', 'min:0'],
@@ -37,9 +37,9 @@ class ProductRequest extends FormRequest
     public function messages(): array
     {
         return [
-            'name.required'        => 'Nama produk wajib diisi.',
-            'name.string'          => 'Nama produk harus berupa teks.',
-            'name.max'             => 'Nama produk maksimal 255 karakter.',
+            'title.required'       => 'Judul produk wajib diisi.',
+            'title.string'         => 'Judul produk harus berupa teks.',
+            'title.max'            => 'Judul produk maksimal 255 karakter.',
             'price.required'       => 'Harga produk wajib diisi.',
             'price.numeric'        => 'Harga produk harus berupa angka.',
             'price.gt'             => 'Harga produk harus lebih dari 0.',
