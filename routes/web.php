@@ -10,3 +10,5 @@ Route::post('/logout', [AuthController::class, 'destroy'])->middleware('auth')->
 
 Route::view('/dashboard', 'dashboard')->middleware('auth')->name('dashboard');
 Route::view('/produk', 'products.index')->name('products.index'); //untuk katalog
+
+require __DIR__.'/favorites.php';
