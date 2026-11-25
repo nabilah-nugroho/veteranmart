@@ -28,6 +28,8 @@ class ProductRequest extends FormRequest
             'stock'       => ['required', 'integer', 'min:0'],
             'category_id' => ['required', 'exists:categories,id'],
             'image'       => ['nullable', 'image', 'mimes:jpg,jpeg,png,webp', 'max:2048'],
+            'images'      => ['nullable', 'array'],
+            'images.*'    => ['image', 'mimes:jpg,jpeg,png,webp', 'max:2048'],
         ];
     }
 
@@ -51,6 +53,10 @@ class ProductRequest extends FormRequest
             'image.image'          => 'File harus berupa gambar.',
             'image.mimes'          => 'Format gambar harus JPG, JPEG, PNG, atau WEBP.',
             'image.max'            => 'Ukuran gambar maksimal 2 MB.',
+            'images.array'         => 'Format kumpulan gambar tidak valid.',
+            'images.*.image'       => 'Setiap file harus berupa gambar.',
+            'images.*.mimes'       => 'Format setiap gambar harus JPG, JPEG, PNG, atau WEBP.',
+            'images.*.max'         => 'Ukuran setiap gambar maksimal 2 MB.',
         ];
     }
 
