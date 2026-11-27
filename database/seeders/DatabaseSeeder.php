@@ -28,5 +28,7 @@ class DatabaseSeeder extends Seeder
             'password' => 'password',
             'role' => 'mahasiswa',
         ]);
+        //data awal titik temu
+        $this->call(MeetingPointSeeder::class);
     }
 }
